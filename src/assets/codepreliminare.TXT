@@ -1,0 +1,49 @@
+CODIGO PRELIMINAR LOGIN
+
+
+          {/* <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              name
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={values.name}
+              onChange={handleChange}
+              className="form-input"
+            />
+          </div> */}
+
+
+  Register
+
+     const handleChange = (e) => {
+      
+      const name = e.target.name;
+      const value = e.target.value;
+      console.log(`${name}:${value}`);
+      }  
+
+            // const { name, email, password, isMember } = values;
+      // if (!email || !password || (!isMember && !name)) {
+      //   toast.error('Please fill out all fields');
+       // console.log('Please fill out all fields');
+      //   return;
+
+
+      export const registerUser = createAsyncThunk(
+  'user/registerUser',
+  async (user, thunkAPI) => {
+    try {
+      //return registerUserThunk('/auth/register', user, thunkAPI);
+      const resp = await customFetch.post('/auth/testingRegister',user)
+      console.log(resp)
+    } catch (error) {
+            toast.error(error.response.data.msg);
+
+      console.log(error.response);
+    }
+    // return registerUserThunk('/auth/register', user, thunkAPI);
+    // console.log(`Register User:${JSON.stringify(user)}`)
+  }
+);
