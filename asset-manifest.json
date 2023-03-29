@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/AnagramaDemo-landing/static/css/main.af62ce9f.css",
+    "main.js": "/AnagramaDemo-landing/static/js/main.83579cc7.js",
+    "static/media/iscm-removebg-preview.png": "/AnagramaDemo-landing/static/media/iscm-removebg-preview.68add3612c5cb1805367.png",
+    "static/media/jobdashboard.png": "/AnagramaDemo-landing/static/media/jobdashboard.2e9d6ab44637434063af.png",
+    "static/media/logosmall.png": "/AnagramaDemo-landing/static/media/logosmall.9955aa658ef065a47c54.png",
+    "static/media/not-found.svg": "/AnagramaDemo-landing/static/media/not-found.5cfa24fa5e3ca7dffe02f358358ea9df.svg",
+    "index.html": "/AnagramaDemo-landing/index.html",
+    "main.af62ce9f.css.map": "/AnagramaDemo-landing/static/css/main.af62ce9f.css.map",
+    "main.83579cc7.js.map": "/AnagramaDemo-landing/static/js/main.83579cc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af62ce9f.css",
+    "static/js/main.83579cc7.js"
+  ]
+}
