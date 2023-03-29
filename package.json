@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://MikeMM2.github.io/AnagramaDemo/landing",
   "dependencies": {
     "@azure/msal-browser": "^2.33.0",
     "@azure/msal-common": "^10.0.0",

@@ -18,8 +18,10 @@ import Profile from './pages/dashboard/Profile';
 
 
 function App() {
-   return (
 
+  //const rutaservidor ="/" //local
+  const rutaservidor ="/AnagramaDemo";
+   return (
       <BrowserRouter>
       <Routes>
         <Route
@@ -35,7 +37,8 @@ function App() {
           <Route path='add-job' element={<AddJob />} />
           <Route path='profile' element={<Profile />} />
           </Route>
-          <Route path='landing' element={<Landing />} />
+          <Route path= {rutaservidor +"/landing"} element={<Landing />} />
+          {/* <Route path='landing' element={<Landing />} /> */}
         {/* <Route path='register' element={<Register />} /> */}
         <Route path='*' element={<Error />} />      
       </Routes>

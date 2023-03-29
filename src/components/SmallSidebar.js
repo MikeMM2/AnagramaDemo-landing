@@ -4,7 +4,7 @@ import Logo from './Logo';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleSidebar } from '../features/user/userSlice';
 import NavLinks from './NavLinks';
-import React, { Component }  from 'react';
+import React from 'react';
 
 const SmallSidebar = () => {
   const { isSidebarOpen } = useSelector((store) => store.user);

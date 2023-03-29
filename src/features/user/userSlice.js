@@ -36,48 +36,6 @@ export const registerUser = createAsyncThunk(
   }
 );
 
-// export const loginUser = createAsyncThunk(
-//   'user/loginUser',
-//   async (user, thunkAPI) => {
-//     try {
-//       const resp = await customFetch.post('/cuentas/login',user);
-//       return resp.data;
-  
-//     } catch (error) {
-
-//       return thunkAPI.rejectWithValue(error.response.data.msg);
-//     }
-
-//     // return loginUserThunk('/auth/login', user, thunkAPI);
-//     // console.log(`Login User:${JSON.stringify(user)}`)
-//   }
-// );
-
-// export const loginUser = (state, action) => {
-//   debugger
-//   switch (state.type) {
-//       case "LOGIN":
-//           localStorage.setItem("user", state.payload.user);
-//           localStorage.setItem("token", state.payload.token);
-//           return {
-//               ...state,
-//               isAuthenticated: true,
-//               user: state.payload.user,
-//               token: state.payload.token,
-//               isLoading : true    
-//           };
-//       case "LOGOUT":
-//           localStorage.clear();
-//           return {
-//               ...state,
-//               isAuthenticated: false,
-//               user: null
-//           };
-//       default:
-//           return state;
-//   }
-// };
-
 export const loginUser = createAsyncThunk(
   'user/loginUser',
   async (state) => {
@@ -123,7 +81,7 @@ const userSlice = createSlice({
 
         addUserToLocalStorage(user);
 
-        toast.success(`Welcome Back ${user}`);
+        toast.success(`Bienvenido de nuevo ${user}`);
       })
       .addCase(loginUser.rejected, (state, { payload }) => {
         state.isLoading = false;

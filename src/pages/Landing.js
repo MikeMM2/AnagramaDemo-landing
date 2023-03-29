@@ -48,7 +48,7 @@ function Landing(){
       
       try {
          
-        const loginResponse = msalInstance .loginPopup(loginRequest);     
+        const loginResponse = msalInstance.loginPopup(loginRequest);     
         const user = (await loginResponse).account.username;
         const token = (await loginResponse).accessToken;
 
@@ -61,12 +61,6 @@ function Landing(){
 
         setValues({  error : null, isAuthenticated : true,token: token, isMember: true, user: user });
            
-        // if (values.isMember) {
-        //   dispatch(loginUser({
-        //     type: 'LOGIN', payload: {user,token}
-        // }));
-        //   return;
-        // }
         if (values.isMember) {
           dispatch(loginUser({ user: user, token: token }));
           return;
@@ -84,7 +78,7 @@ function Landing(){
   useEffect(() => {
     if (user) {
       setTimeout(() => {
-        navigate('/');
+      navigate('/');
       }, 2000);
     }
   }, [user]);

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import links from '../utils/links';
-import React, { Component }  from 'react';
+import React from 'react';
 
 const NavLinks = ({ toggleSidebar }) => {
   return (
